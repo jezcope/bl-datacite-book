@@ -1,0 +1,12 @@
+jupyter-book
+jupyter-console
+numpy
+pandas
+altair
+requests
+httpx
+jsonapi-client
+ghp-import
+Faker
+XlsxWriter
+xlrd
