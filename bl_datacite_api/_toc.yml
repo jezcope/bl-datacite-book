@@ -6,4 +6,5 @@ root: intro
 chapters:
 - file: resources
 - file: notebooks
-- file: markdown-notebooks
+  sections:
+    - file: notebooks/make-test-dois
