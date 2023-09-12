@@ -1,3 +1,7 @@
-/_build$
-^\.envrc$
-^\.direnv$
+syntax: glob
+_build
+.ipynb_checkpoints
+result
+
+syntax: regexp
+.(envrc|direnv)$
