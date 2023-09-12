@@ -1,5 +1,6 @@
 {
-  description = "Description for the project";
+  description =
+    "A set of documented examples of tasks that can be performed using the DataCite API";
 
   inputs = { nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; };
 
@@ -10,7 +11,8 @@
         [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin" ];
       perSystem = { config, self', inputs', pkgs, system, ... }:
         let
-          python = mach-nix.lib.${system}.mkPython {
+          mach-nix' = mach-nix.lib.${system};
+          python = mach-nix'.mkPython {
             requirements = builtins.readFile ./requirements.txt;
             providers = {
               webcolors = "sdist";
@@ -18,21 +20,12 @@
             };
           };
         in {
-          # Per-system attributes can be defined here. The self' and inputs'
-          # module parameters provide easy access to attributes of the same
-          # system.
-
           packages = {
             inherit python;
             default = python;
           };
+
           devShells.default = python.env;
         };
-      flake = {
-        # The usual flake attributes can be defined here, including system-
-        # agnostic ones like nixosModule and system-enumerating ones, although
-        # those are more easily expressed in perSystem.
-
-      };
     };
 }
