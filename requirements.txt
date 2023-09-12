@@ -1,8 +1,10 @@
-jupyter-book
+jupyterlab
 jupyter-console
+jupyter-book
 numpy
 pandas
 altair
+matplotlib
 requests
 httpx
 jsonapi-client
