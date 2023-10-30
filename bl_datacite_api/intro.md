@@ -15,9 +15,17 @@ kernelspec:
 
 # Introduction
 
-This site provides a number of examples of using Python to automate common tasks for DataCite Members using the DataCite API and a few related services. The examples are presented as [Jupyter Notebooks](https://jupyter.org/), which interleave descriptive text with code and the results of running that code to give a narrative explanation of the workflow which is also directly executable.
+This site provides a number of examples
+of using Python to automate common tasks for DataCite Members
+using the DataCite API and a few related services.
+The examples are presented as [Jupyter Notebooks](https://jupyter.org/),
+which interleave descriptive text
+with code and the results of running that code
+to give a narrative explanation of the workflow
+which is also directly executable.
 
-You'll see code presented like this, followed by the results of running it:
+You'll see code presented like this,
+followed by the results of running it:
 
 ```{code-cell}
 name = "DataCite"

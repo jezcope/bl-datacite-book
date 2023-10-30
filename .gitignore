@@ -1,0 +1,6 @@
+_build
+.ipynb_checkpoints
+result
+.env
+.envrc
+.direnv
