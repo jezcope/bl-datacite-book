@@ -13,7 +13,7 @@
         let
           mach-nix' = mach-nix.lib.${system};
           python = mach-nix'.mkPython {
-            requirements = builtins.readFile ./requirements.txt;
+            requirements = (builtins.readFile ./requirements.txt) + "pip";
             providers = {
               webcolors = "sdist";
               jsonschema = "sdist";
