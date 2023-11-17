@@ -7,4 +7,5 @@ chapters:
 - file: resources
 - file: notebooks
   sections:
+    - file: notebooks/query-dois-python-csv
     - file: notebooks/make-test-dois
