@@ -3,6 +3,9 @@ _build
 .ipynb_checkpoints
 result
 .env
+.pdm-python
+.venv
 
 syntax: regexp
-.(envrc|direnv)$
+\.(envrc|direnv)$
+notebooks/.*\.csv$
