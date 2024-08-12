@@ -31,6 +31,9 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  announcement: |
+    This book is currently in early development — feedback is welcome and encouraged!
+    <a href="https://github.com/jezcope/bl-datacite-book/issues/new?title=Issue%20on%20page%20%2Fresources.html&body=Your%20issue%20content%20here.">Report an issue/provide feedback on GitHub</a>
   use_issues_button: true
   use_repository_button: true
   

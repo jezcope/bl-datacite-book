@@ -11,22 +11,25 @@ requires-python = "~=3.10"
 dependencies = [
     "jupyterlab<5.0.0,>=4.0.8",
     "jupyter-console<7.0.0,>=6.6.3",
-    "jupyter-book<1.0.0,>=0.15.1",
+    "jupyter-book~=1.0.2",
+
     "numpy<2.0.0,>=1.24.4",
     "pandas<3.0.0,>=2.0.3",
     "altair<6.0.0,>=5.1.2",
     "matplotlib<4.0.0,>=3.7.3",
+
     "requests<3.0.0,>=2.31.0",
     "httpx<1.0.0,>=0.25.1",
     "jsonapi-client<1.0.0,>=0.9.9",
+
     "ghp-import<3.0.0,>=2.1.0",
-    "Faker<21.0.0,>=20.0.3",
+    "Faker~=25.8",
     "XlsxWriter<4.0.0,>=3.1.9",
     "xlrd<3.0.0,>=2.0.1",
     "python-dotenv<2.0.0,>=1.0.0",
+
     "tqdm<5.0.0,>=4.66.1",
     "click<9.0.0,>=8.1.7",
-    "rpds-py==0.12.0",
 ]
 name = "bl-datacite-api-book"
 version = "0.1.0"
